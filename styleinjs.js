@@ -21,3 +21,38 @@ const li = document.createElement('li');
 li.innerText = 'Hanasaku Iroha';
 pl.appendChild(li);
 
+const mainc = document.getElementById('main-content');
+const section = document.createElement('section');
+const h1 = document.createElement('h1');
+h1.innerText = "Anime I will watch";
+
+mainc.appendChild(section);
+section.appendChild(h1);
+
+const ul = document.createElement('ul');
+const li1 = document.createElement('li');
+li1.innerText = 'Hal';
+ul.appendChild(li1);
+
+const li2 = document.createElement('li');
+li2.innerText = 'One Piece';
+ul.appendChild(li2);
+
+const li3 = document.createElement('li');
+li3.innerText = 'Conan';
+ul.appendChild(li3);
+
+section.append(ul);
+
+// set directly
+
+const studio = document.createElement('section');
+studio.innerHTML = `
+    <h1>Favourite Studios</h1>
+    <ul>
+    <li>Shaft</li>
+    <li>Kyoto Animation</li>
+    <li>Sunrise</li>
+    </ul>
+`
+mainc.appendChild(studio)
