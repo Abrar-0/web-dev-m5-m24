@@ -17,7 +17,7 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, fugit!</p>
     </header>
     <main>
-        <section>
+        <section class="fav-anime">
             <h1>My awesome Dom</h1>
             <ul>
                 <li>Durarara</li>
@@ -25,9 +25,9 @@
                 <li>Baccano</li>
             </ul>
         </section>
-        <section>
+        <section id="anime-con">
             <h1 id="anime">Anime I like</h1>
-            <ul>
+            <ul id="anime-list">
                 <li class="wow">Monogatari</li>
                 <li class="wow">Silent voice</li>
                 <li>Durarara</li>
@@ -35,11 +35,12 @@
         </section>
     </main>
     <script src="dom.js"></script>
+    <script src="styleinjs.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
         //console.log(liCollection);
         for (const li of liCollection){
-            console.log(li.innerHTML);
+            //console.log(li.innerHTML);
         }
     </script>
 </body>
